@@ -15,7 +15,11 @@ ${HOME_LOGIN_EMAIL}        //input[contains(@data-test,'email')]
 ${HOME_LOGIN_PWD}          //input[@type='password']
 ${HOME_LOGIN_BTNENTRAR}    //button[@type='submit'][contains(.,'Entrar')]
 ${ALERT_WELCOME}           //div[@class='toast-message'][contains(.,'Bem vindo, Bernardos!')]
-
+${HOME_BTN_SETTINGS}        //a[contains(@class,'nav-link dropdown-toggle')]
+${HOME_CONTAS}             //a[contains(.,'Contas')]
+${HOME_RESETAR}            //a[contains(.,'Contas')]
+${HOME_SAIR}               //a[contains(.,'Sair')]
+    
 *** Keywords ***
 Dado que acesso a página home do site    
     Go To    ${URL}
@@ -38,6 +42,13 @@ E digito um email válido
     Input Text    ${HOME_LOGIN_EMAIL}    cab1a@gmail.com    
 E digito uma senha válida  
     Input Text    ${HOME_LOGIN_PWD}    1234        
-E clico no botão entrar
+Então clico no botão entrar
     Click Button    ${HOME_LOGIN_BTNENTRAR}
     Wait Until Element Is Visible   ${ALERT_WELCOME} 
+##################### case 03 ###############
+Quando clico em settings
+    Click Element    ${HOME_BTN_SETTINGS}
+Então as opções Contas, Resetar e Sair devem estar visíveis
+    Element Should Be Visible    ${HOME_CONTAS}
+    Element Should Be Visible    ${HOME_RESETAR}
+    Element Should Be Visible    ${HOME_SAIR}

@@ -1,78 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220520 17:14:57.646" rpa="false" schemaversion="2">
-<suite id="s1" name="testSite" source="C:\Users\Jaime\Documents\RobotFramework\barrigaReact\SuiteSitebarriga\tests\testSite.robot">
-<test id="s1-t1" name="Caso de testes 02: logando com sucesso">
+<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220520 18:21:44.207" rpa="false" schemaversion="2">
+<suite id="s1" name="testSite" source="C:\Users\Jaime\Documents\RobotFramework\barrigaReact\Robot-Framework---BarrigaReact\SuiteSitebarriga\tests\testSite.robot">
+<test id="s1-t1" name="Caso de teste 03: conferindo se o menu settings exibe 3 opções">
 <kw name="Abrir o navegador" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220520 17:14:58.674" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220520 17:14:58.673" endtime="20220520 17:15:03.442"/>
+<msg timestamp="20220520 18:21:45.365" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220520 18:21:45.362" endtime="20220520 18:21:50.848"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220520 17:15:03.442" endtime="20220520 17:15:03.720"/>
+<status status="PASS" starttime="20220520 18:21:50.848" endtime="20220520 18:21:51.069"/>
 </kw>
-<status status="PASS" starttime="20220520 17:14:58.671" endtime="20220520 17:15:03.720"/>
+<status status="PASS" starttime="20220520 18:21:45.360" endtime="20220520 18:21:51.072"/>
 </kw>
 <kw name="Dado que acesso a página home do site" library="home">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220520 17:15:03.730" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
-<status status="PASS" starttime="20220520 17:15:03.728" endtime="20220520 17:15:06.526"/>
+<msg timestamp="20220520 18:21:51.085" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220520 18:21:51.084" endtime="20220520 18:21:54.026"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOME_LOGIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220520 17:15:06.526" endtime="20220520 17:15:06.642"/>
+<status status="PASS" starttime="20220520 18:21:54.026" endtime="20220520 18:21:54.201"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220520 17:15:06.673" level="INFO">Page title is 'React App'.</msg>
-<status status="PASS" starttime="20220520 17:15:06.642" endtime="20220520 17:15:06.673"/>
+<msg timestamp="20220520 18:21:54.219" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220520 18:21:54.201" endtime="20220520 18:21:54.219"/>
 </kw>
-<status status="PASS" starttime="20220520 17:15:03.720" endtime="20220520 17:15:06.673"/>
+<status status="PASS" starttime="20220520 18:21:51.082" endtime="20220520 18:21:54.219"/>
 </kw>
 <kw name="E digito um email válido" library="home">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_EMAIL}</arg>
 <arg>cab1a@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220520 17:15:06.673" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
-<status status="PASS" starttime="20220520 17:15:06.673" endtime="20220520 17:15:07.150"/>
+<msg timestamp="20220520 18:21:54.229" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220520 18:21:54.226" endtime="20220520 18:21:54.656"/>
 </kw>
-<status status="PASS" starttime="20220520 17:15:06.673" endtime="20220520 17:15:07.151"/>
+<status status="PASS" starttime="20220520 18:21:54.221" endtime="20220520 18:21:54.657"/>
 </kw>
 <kw name="E digito uma senha válida" library="home">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_PWD}</arg>
 <arg>1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220520 17:15:07.156" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220520 17:15:07.154" endtime="20220520 17:15:07.447"/>
+<msg timestamp="20220520 18:21:54.662" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220520 18:21:54.660" endtime="20220520 18:21:55.001"/>
 </kw>
-<status status="PASS" starttime="20220520 17:15:07.152" endtime="20220520 17:15:07.448"/>
+<status status="PASS" starttime="20220520 18:21:54.659" endtime="20220520 18:21:55.002"/>
 </kw>
-<kw name="E clico no botão entrar" library="home">
+<kw name="Então clico no botão entrar" library="home">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_BTNENTRAR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220520 17:15:07.452" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
-<status status="PASS" starttime="20220520 17:15:07.451" endtime="20220520 17:15:07.676"/>
+<msg timestamp="20220520 18:21:55.008" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220520 18:21:55.006" endtime="20220520 18:21:55.296"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ALERT_WELCOME}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220520 17:15:07.677" endtime="20220520 17:15:08.851"/>
+<status status="PASS" starttime="20220520 18:21:55.297" endtime="20220520 18:21:56.603"/>
 </kw>
-<status status="PASS" starttime="20220520 17:15:07.449" endtime="20220520 17:15:08.851"/>
+<status status="PASS" starttime="20220520 18:21:55.004" endtime="20220520 18:21:56.604"/>
 </kw>
-<status status="PASS" starttime="20220520 17:14:58.667" endtime="20220520 17:15:08.854"/>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220520 18:21:56.611" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220520 18:21:56.610" endtime="20220520 18:21:57.042"/>
+</kw>
+<status status="PASS" starttime="20220520 18:21:56.607" endtime="20220520 18:21:57.043"/>
+</kw>
+<kw name="Então as opções Contas, Resetar e Sair devem estar visíveis" library="home">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${HOME_CONTAS}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220520 18:21:57.292" level="INFO">Element '//a[contains(.,'Contas')]' is displayed.</msg>
+<status status="PASS" starttime="20220520 18:21:57.049" endtime="20220520 18:21:57.292"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${HOME_RESETAR}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220520 18:21:57.420" level="INFO">Element '//a[contains(.,'Contas')]' is displayed.</msg>
+<status status="PASS" starttime="20220520 18:21:57.292" endtime="20220520 18:21:57.420"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${HOME_SAIR}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220520 18:21:57.554" level="INFO">Element '//a[contains(.,'Sair')]' is displayed.</msg>
+<status status="PASS" starttime="20220520 18:21:57.420" endtime="20220520 18:21:57.554"/>
+</kw>
+<status status="PASS" starttime="20220520 18:21:57.046" endtime="20220520 18:21:57.569"/>
+</kw>
+<status status="PASS" starttime="20220520 18:21:45.355" endtime="20220520 18:21:57.580"/>
 </test>
-<status status="PASS" starttime="20220520 17:14:57.665" endtime="20220520 17:15:08.868"/>
+<status status="PASS" starttime="20220520 18:21:44.223" endtime="20220520 18:21:57.582"/>
 </suite>
 <statistics>
 <total>
