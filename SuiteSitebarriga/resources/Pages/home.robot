@@ -38,11 +38,10 @@ Então clico em Regristrar
     Click Element    ${HOME_REGISTRAR_BTN} 
     Wait Until Element Is Visible   ${HOME_ALERT_SUCESSO}  
 ############ case 02 ###################
-E digito um email válido
-    Input Text    ${HOME_LOGIN_EMAIL}    cab1a@gmail.com    
-E digito uma senha válida  
-    Input Text    ${HOME_LOGIN_PWD}    1234        
-Então clico no botão entrar
+E digito um email e senha válidos
+    Input Text    ${HOME_LOGIN_EMAIL}    cab1a@gmail.com 
+    Input Text    ${HOME_LOGIN_PWD}    1234             
+E clico no botão entrar
     Click Button    ${HOME_LOGIN_BTNENTRAR}
     Wait Until Element Is Visible   ${ALERT_WELCOME} 
 ##################### case 03 ###############
@@ -52,3 +51,8 @@ Então as opções Contas, Resetar e Sair devem estar visíveis
     Element Should Be Visible    ${HOME_CONTAS}
     Element Should Be Visible    ${HOME_RESETAR}
     Element Should Be Visible    ${HOME_SAIR}
+##################### case 04 ######################
+Então clico em Contas
+    Click Element     ${HOME_CONTAS}   
+    
+    
