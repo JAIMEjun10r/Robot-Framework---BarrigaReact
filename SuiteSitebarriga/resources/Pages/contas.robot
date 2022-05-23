@@ -11,6 +11,8 @@ ${DELETE_CP}                (//i[@class='far fa-trash-alt'])[2]
 ${CC_VISIVEL}                //td[contains(.,'Conta Corrente')]
 ${CP_VISIVEL}                //td[contains(.,'Conta Poupança')]
 ${ALERT_CONTA_EXCLUIDA}     //div[@class='toast-message'][contains(.,'Conta excluída com sucesso!')]
+${ALTERAR_CONTA}            //i[contains(@class,'far fa-edit')]
+${CLEAR_ELEMENT}            //input[contains(@type,'text')]
 
 
 *** Keywords ***
@@ -40,5 +42,10 @@ Então aparece mensagem dizendo Conta excluída com sucesso
    Wait Until Element Is Visible    ${ALERT_CONTA_EXCLUIDA}
    Page Should Not Contain    Conta Corrente
    Page Should Not Contain    Conta Poupança
-   
+######################## case 07 #######################
+Quando clico no ícone de alterar
+    Click Element    ${ALTERAR_CONTA}
+E digito Conta Salário
+    Clear Element Text    ${CLEAR_ELEMENT}
+    Input Text    ${CLEAR_ELEMENT}    Conta Salário
    
