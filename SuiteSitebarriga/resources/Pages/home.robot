@@ -51,6 +51,9 @@ Então as opções Contas, Resetar e Sair devem estar visíveis
     Element Should Be Visible    ${HOME_CONTAS}
     Element Should Be Visible    ${HOME_RESETAR}
     Element Should Be Visible    ${HOME_SAIR}
+Então clico em sair
+    Click Element    ${HOME_SAIR}
+    
 ##################### case 04 ######################
 Então clico em Contas
     Click Element     ${HOME_CONTAS}   

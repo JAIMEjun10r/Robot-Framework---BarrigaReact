@@ -1,172 +1,674 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220523 11:32:27.877" rpa="false" schemaversion="2">
-<suite id="s1" name="testSite" source="C:\Users\Jaime\Documents\RobotFramework\barrigaReact\Robot-Framework---BarrigaReact\SuiteSitebarriga\tests\testSite.robot">
-<test id="s1-t1" name="Caso de testes 07: alterando o nome de uma conta">
+<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220527 12:11:48.225" rpa="false" schemaversion="2">
+<suite id="s1" name="testSite" source="C:\Users\Jaime\Documents\RobotFramework\barrigaReact\RB\SuiteSitebarriga\tests\testSite.robot">
+<test id="s1-t1" name="Caso de testes 04: criando uma conta corrente">
 <kw name="Abrir o navegador" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220523 11:32:29.137" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220523 11:32:29.132" endtime="20220523 11:32:34.020"/>
+<msg timestamp="20220527 12:11:50.518" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220527 12:11:50.515" endtime="20220527 12:11:56.981"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220523 11:32:34.022" endtime="20220523 11:32:34.500"/>
+<status status="PASS" starttime="20220527 12:11:56.982" endtime="20220527 12:11:57.421"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:29.118" endtime="20220523 11:32:34.501"/>
+<status status="PASS" starttime="20220527 12:11:50.510" endtime="20220527 12:11:57.422"/>
 </kw>
 <kw name="Dado que acesso a página home do site" library="home">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220523 11:32:34.517" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
-<status status="PASS" starttime="20220523 11:32:34.516" endtime="20220523 11:32:38.702"/>
+<msg timestamp="20220527 12:11:57.434" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220527 12:11:57.431" endtime="20220527 12:12:01.200"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOME_LOGIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220523 11:32:38.706" endtime="20220523 11:32:38.896"/>
+<status status="PASS" starttime="20220527 12:12:01.201" endtime="20220527 12:12:01.559"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220523 11:32:38.912" level="INFO">Page title is 'React App'.</msg>
-<status status="PASS" starttime="20220523 11:32:38.897" endtime="20220523 11:32:38.913"/>
+<msg timestamp="20220527 12:12:01.584" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220527 12:12:01.560" endtime="20220527 12:12:01.584"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:34.513" endtime="20220523 11:32:38.913"/>
+<status status="PASS" starttime="20220527 12:11:57.428" endtime="20220527 12:12:01.585"/>
 </kw>
 <kw name="E digito um email e senha válidos" library="home">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_EMAIL}</arg>
 <arg>cab1a@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:38.918" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:38.917" endtime="20220523 11:32:39.483"/>
+<msg timestamp="20220527 12:12:01.595" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:01.592" endtime="20220527 12:12:02.491"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_PWD}</arg>
 <arg>1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:39.485" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220523 11:32:39.484" endtime="20220523 11:32:39.840"/>
+<msg timestamp="20220527 12:12:02.494" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220527 12:12:02.491" endtime="20220527 12:12:03.087"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:38.916" endtime="20220523 11:32:39.840"/>
+<status status="PASS" starttime="20220527 12:12:01.590" endtime="20220527 12:12:03.088"/>
 </kw>
 <kw name="E clico no botão entrar" library="home">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_BTNENTRAR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:39.845" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:39.843" endtime="20220523 11:32:40.131"/>
+<msg timestamp="20220527 12:12:03.097" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:03.094" endtime="20220527 12:12:03.494"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ALERT_WELCOME}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220523 11:32:40.132" endtime="20220523 11:32:41.988"/>
+<status status="PASS" starttime="20220527 12:12:03.495" endtime="20220527 12:12:05.532"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:39.842" endtime="20220523 11:32:41.992"/>
+<status status="PASS" starttime="20220527 12:12:03.092" endtime="20220527 12:12:05.534"/>
 </kw>
 <kw name="Quando clico em settings" library="home">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HOME_BTN_SETTINGS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:41.999" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:41.997" endtime="20220523 11:32:42.391"/>
+<msg timestamp="20220527 12:12:05.541" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:05.539" endtime="20220527 12:12:05.899"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:41.995" endtime="20220523 11:32:42.392"/>
+<status status="PASS" starttime="20220527 12:12:05.537" endtime="20220527 12:12:05.901"/>
 </kw>
 <kw name="Então clico em Contas" library="home">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HOME_CONTAS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:42.408" level="INFO">Clicking element '//a[contains(.,'Contas')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:42.405" endtime="20220523 11:32:42.867"/>
+<msg timestamp="20220527 12:12:05.937" level="INFO">Clicking element '//a[contains(.,'Contas')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:05.935" endtime="20220527 12:12:06.429"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:42.397" endtime="20220523 11:32:42.869"/>
+<status status="PASS" starttime="20220527 12:12:05.933" endtime="20220527 12:12:06.430"/>
 </kw>
 <kw name="E digito Conta Corrente" library="contas">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_CONTA}</arg>
 <arg>Conta Corrente</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:42.889" level="INFO">Typing text 'Conta Corrente' into text field '//input[contains(@type,'text')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:42.887" endtime="20220523 11:32:43.555"/>
+<msg timestamp="20220527 12:12:06.471" level="INFO">Typing text 'Conta Corrente' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:06.469" endtime="20220527 12:12:07.463"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:42.885" endtime="20220523 11:32:43.556"/>
+<status status="PASS" starttime="20220527 12:12:06.467" endtime="20220527 12:12:07.464"/>
 </kw>
 <kw name="Então clico no ícone azul de salvar" library="contas">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${BTN_SAVE_CONTA}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:43.562" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:43.561" endtime="20220523 11:32:43.919"/>
+<msg timestamp="20220527 12:12:07.484" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:07.481" endtime="20220527 12:12:07.854"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:43.558" endtime="20220523 11:32:43.919"/>
+<status status="PASS" starttime="20220527 12:12:07.478" endtime="20220527 12:12:07.856"/>
 </kw>
 <kw name="E confiro se consta Conta Corrente como salva" library="contas">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CONTA_ALERT_SUCESSO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220523 11:32:43.924" endtime="20220523 11:32:45.080"/>
+<status status="PASS" starttime="20220527 12:12:07.888" endtime="20220527 12:12:09.177"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Conta Corrente</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220523 11:32:45.152" level="INFO">Current page contains text 'Conta Corrente'.</msg>
-<status status="PASS" starttime="20220523 11:32:45.081" endtime="20220523 11:32:45.153"/>
+<msg timestamp="20220527 12:12:09.255" level="INFO">Current page contains text 'Conta Corrente'.</msg>
+<status status="PASS" starttime="20220527 12:12:09.178" endtime="20220527 12:12:09.256"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:43.922" endtime="20220523 11:32:45.154"/>
+<status status="PASS" starttime="20220527 12:12:07.885" endtime="20220527 12:12:09.257"/>
 </kw>
-<kw name="Quando clico no ícone de alterar" library="contas">
+<kw name="Quando clico em settings" library="home">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${ALTERAR_CONTA}</arg>
+<arg>${HOME_BTN_SETTINGS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:45.164" level="INFO">Clicking element '//i[contains(@class,'far fa-edit')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:45.163" endtime="20220523 11:32:45.510"/>
+<msg timestamp="20220527 12:12:09.265" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:09.262" endtime="20220527 12:12:09.690"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:45.160" endtime="20220523 11:32:45.514"/>
+<status status="PASS" starttime="20220527 12:12:09.260" endtime="20220527 12:12:09.691"/>
 </kw>
-<kw name="E digito Conta Salário" library="contas">
-<kw name="Clear Element Text" library="SeleniumLibrary">
-<arg>${CLEAR_ELEMENT}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220523 11:32:45.529" endtime="20220523 11:32:45.756"/>
+<kw name="Então clico em sair" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_SAIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:09.712" level="INFO">Clicking element '//a[contains(.,'Sair')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:09.710" endtime="20220527 12:12:10.584"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:09.702" endtime="20220527 12:12:10.588"/>
+</kw>
+<kw name="Fechar o navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220527 12:12:10.617" endtime="20220527 12:12:16.943"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:10.615" endtime="20220527 12:12:16.944"/>
+</kw>
+<tag>contaCorrente</tag>
+<tag>Contas</tag>
+<status status="PASS" starttime="20220527 12:11:50.469" endtime="20220527 12:12:16.949"/>
+</test>
+<test id="s1-t2" name="Caso de testes 05: adicionando conta poupança">
+<kw name="Abrir o navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220527 12:12:16.969" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220527 12:12:16.966" endtime="20220527 12:12:23.805"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220527 12:12:23.806" endtime="20220527 12:12:24.536"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:16.963" endtime="20220527 12:12:24.537"/>
+</kw>
+<kw name="Dado que acesso a página home do site" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220527 12:12:24.584" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220527 12:12:24.582" endtime="20220527 12:12:28.465"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:12:28.466" endtime="20220527 12:12:28.732"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220527 12:12:28.755" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220527 12:12:28.733" endtime="20220527 12:12:28.756"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:24.580" endtime="20220527 12:12:28.757"/>
+</kw>
+<kw name="E digito um email e senha válidos" library="home">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_EMAIL}</arg>
+<arg>cab1a@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:28.764" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:28.762" endtime="20220527 12:12:29.815"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${CLEAR_ELEMENT}</arg>
-<arg>Conta Salário</arg>
+<arg>${HOME_LOGIN_PWD}</arg>
+<arg>1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:45.760" level="INFO">Typing text 'Conta Salário' into text field '//input[contains(@type,'text')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:45.757" endtime="20220523 11:32:46.441"/>
+<msg timestamp="20220527 12:12:29.819" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220527 12:12:29.816" endtime="20220527 12:12:30.467"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:45.524" endtime="20220523 11:32:46.442"/>
+<status status="PASS" starttime="20220527 12:12:28.760" endtime="20220527 12:12:30.468"/>
+</kw>
+<kw name="E clico no botão entrar" library="home">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_BTNENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:30.490" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:30.488" endtime="20220527 12:12:30.911"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_WELCOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:12:30.911" endtime="20220527 12:12:32.918"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:30.485" endtime="20220527 12:12:32.919"/>
+</kw>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:32.926" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:32.923" endtime="20220527 12:12:33.260"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:32.921" endtime="20220527 12:12:33.261"/>
+</kw>
+<kw name="Então clico em Contas" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_CONTAS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:33.270" level="INFO">Clicking element '//a[contains(.,'Contas')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:33.267" endtime="20220527 12:12:33.760"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:33.263" endtime="20220527 12:12:33.761"/>
+</kw>
+<kw name="E digito Conta Poupança" library="contas">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${INPUT_CONTA}</arg>
+<arg>Conta Poupança</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:33.806" level="INFO">Typing text 'Conta Poupança' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:33.804" endtime="20220527 12:12:34.498"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:33.802" endtime="20220527 12:12:34.499"/>
 </kw>
 <kw name="Então clico no ícone azul de salvar" library="contas">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${BTN_SAVE_CONTA}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220523 11:32:46.447" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
-<status status="PASS" starttime="20220523 11:32:46.446" endtime="20220523 11:32:46.721"/>
+<msg timestamp="20220527 12:12:34.521" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:34.519" endtime="20220527 12:12:34.928"/>
 </kw>
-<status status="PASS" starttime="20220523 11:32:46.444" endtime="20220523 11:32:46.722"/>
+<status status="PASS" starttime="20220527 12:12:34.517" endtime="20220527 12:12:34.929"/>
+</kw>
+<kw name="E confiro se consta Conta Corrente e Conta Poupança como salva" library="contas">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONTA_ALERT_SUCESSO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:12:35.011" endtime="20220527 12:12:36.360"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Conta Poupança</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220527 12:12:36.444" level="INFO">Current page contains text 'Conta Poupança'.</msg>
+<status status="PASS" starttime="20220527 12:12:36.361" endtime="20220527 12:12:36.445"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Conta Corrente</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220527 12:12:36.509" level="INFO">Current page contains text 'Conta Corrente'.</msg>
+<status status="PASS" starttime="20220527 12:12:36.446" endtime="20220527 12:12:36.510"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:35.009" endtime="20220527 12:12:36.511"/>
+</kw>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:36.521" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:36.519" endtime="20220527 12:12:36.907"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:36.517" endtime="20220527 12:12:36.908"/>
+</kw>
+<kw name="Então clico em sair" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_SAIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:36.935" level="INFO">Clicking element '//a[contains(.,'Sair')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:36.933" endtime="20220527 12:12:37.862"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:36.929" endtime="20220527 12:12:37.866"/>
+</kw>
+<kw name="Fechar o navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220527 12:12:37.912" endtime="20220527 12:12:42.488"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:37.908" endtime="20220527 12:12:42.489"/>
+</kw>
+<tag>ContaPoupança</tag>
+<tag>Contas</tag>
+<status status="PASS" starttime="20220527 12:12:16.958" endtime="20220527 12:12:42.491"/>
+</test>
+<test id="s1-t3" name="Caso de testes 06: excluindo conta corrente e poupança">
+<kw name="Abrir o navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220527 12:12:42.507" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220527 12:12:42.505" endtime="20220527 12:12:48.779"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220527 12:12:48.780" endtime="20220527 12:12:49.288"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:42.502" endtime="20220527 12:12:49.290"/>
+</kw>
+<kw name="Dado que acesso a página home do site" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220527 12:12:49.314" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220527 12:12:49.312" endtime="20220527 12:12:54.867"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:12:54.868" endtime="20220527 12:12:55.151"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220527 12:12:55.188" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220527 12:12:55.152" endtime="20220527 12:12:55.188"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:49.310" endtime="20220527 12:12:55.190"/>
+</kw>
+<kw name="E digito um email e senha válidos" library="home">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_EMAIL}</arg>
+<arg>cab1a@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:55.235" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:55.232" endtime="20220527 12:12:56.214"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_PWD}</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:56.218" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220527 12:12:56.216" endtime="20220527 12:12:56.916"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:55.229" endtime="20220527 12:12:56.917"/>
+</kw>
+<kw name="E clico no botão entrar" library="home">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_BTNENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:56.923" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:56.921" endtime="20220527 12:12:57.339"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_WELCOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:12:57.340" endtime="20220527 12:12:59.472"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:56.919" endtime="20220527 12:12:59.473"/>
+</kw>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:59.480" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:59.478" endtime="20220527 12:12:59.844"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:59.476" endtime="20220527 12:12:59.846"/>
+</kw>
+<kw name="Então clico em Contas" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_CONTAS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:12:59.858" level="INFO">Clicking element '//a[contains(.,'Contas')]'.</msg>
+<status status="PASS" starttime="20220527 12:12:59.854" endtime="20220527 12:13:00.502"/>
+</kw>
+<status status="PASS" starttime="20220527 12:12:59.852" endtime="20220527 12:13:00.503"/>
+</kw>
+<kw name="Quando clico em deletar Conta Corrente e Conta Poupança" library="contas">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CC_VISIVEL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:00.624" endtime="20220527 12:13:01.056"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CP_VISIVEL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:01.057" endtime="20220527 12:13:01.204"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Conta Corrente</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220527 12:13:01.285" level="INFO">Current page contains text 'Conta Corrente'.</msg>
+<status status="PASS" starttime="20220527 12:13:01.205" endtime="20220527 12:13:01.286"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Conta Poupança</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220527 12:13:01.363" level="INFO">Current page contains text 'Conta Poupança'.</msg>
+<status status="PASS" starttime="20220527 12:13:01.287" endtime="20220527 12:13:01.364"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DELETE_CC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:01.367" level="INFO">Clicking element '(//i[contains(@class,'far fa-trash-alt')])[1]'.</msg>
+<status status="PASS" starttime="20220527 12:13:01.365" endtime="20220527 12:13:01.905"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${CC_VISIVEL}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220527 12:13:01.906" endtime="20220527 12:13:02.538"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DELETE_CP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:02.542" level="INFO">Clicking element '//i[@class='far fa-trash-alt']'.</msg>
+<status status="PASS" starttime="20220527 12:13:02.538" endtime="20220527 12:13:03.114"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${CP_VISIVEL}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<msg timestamp="20220527 12:13:03.814" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20220527 12:13:03.115" endtime="20220527 12:13:04.191"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:00.622" endtime="20220527 12:13:04.192"/>
+</kw>
+<kw name="Então aparece mensagem dizendo Conta excluída com sucesso" library="contas">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_CONTA_EXCLUIDA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:04.201" endtime="20220527 12:13:04.394"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Conta Corrente</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20220527 12:13:04.544" level="INFO">Current page does not contain text 'Conta Corrente'.</msg>
+<status status="PASS" starttime="20220527 12:13:04.396" endtime="20220527 12:13:04.545"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Conta Poupança</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20220527 12:13:04.646" level="INFO">Current page does not contain text 'Conta Poupança'.</msg>
+<status status="PASS" starttime="20220527 12:13:04.546" endtime="20220527 12:13:04.647"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:04.198" endtime="20220527 12:13:04.648"/>
+</kw>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:04.682" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:04.679" endtime="20220527 12:13:04.942"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:04.677" endtime="20220527 12:13:04.943"/>
+</kw>
+<kw name="Então clico em sair" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_SAIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:04.959" level="INFO">Clicking element '//a[contains(.,'Sair')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:04.958" endtime="20220527 12:13:05.563"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:04.955" endtime="20220527 12:13:05.564"/>
+</kw>
+<kw name="Fechar o navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220527 12:13:05.585" endtime="20220527 12:13:10.754"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:05.581" endtime="20220527 12:13:10.755"/>
+</kw>
+<tag>Contas</tag>
+<tag>ExclusãoContas</tag>
+<status status="PASS" starttime="20220527 12:12:42.498" endtime="20220527 12:13:10.758"/>
+</test>
+<test id="s1-t4" name="Caso de testes 07: alterando o nome de uma conta">
+<kw name="Abrir o navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220527 12:13:10.775" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220527 12:13:10.773" endtime="20220527 12:13:17.319"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220527 12:13:17.321" endtime="20220527 12:13:17.664"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:10.770" endtime="20220527 12:13:17.665"/>
+</kw>
+<kw name="Dado que acesso a página home do site" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220527 12:13:17.687" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220527 12:13:17.686" endtime="20220527 12:13:21.594"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:21.595" endtime="20220527 12:13:21.910"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220527 12:13:21.937" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220527 12:13:21.910" endtime="20220527 12:13:21.938"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:17.684" endtime="20220527 12:13:21.939"/>
+</kw>
+<kw name="E digito um email e senha válidos" library="home">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_EMAIL}</arg>
+<arg>cab1a@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:21.950" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:21.948" endtime="20220527 12:13:22.855"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_PWD}</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:22.858" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220527 12:13:22.856" endtime="20220527 12:13:23.490"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:21.945" endtime="20220527 12:13:23.491"/>
+</kw>
+<kw name="E clico no botão entrar" library="home">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${HOME_LOGIN_BTNENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:23.505" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:23.503" endtime="20220527 12:13:23.911"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_WELCOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:23.912" endtime="20220527 12:13:25.481"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:23.498" endtime="20220527 12:13:25.482"/>
+</kw>
+<kw name="Quando clico em settings" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_BTN_SETTINGS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:25.494" level="INFO">Clicking element '//a[contains(@class,'nav-link dropdown-toggle')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:25.492" endtime="20220527 12:13:26.030"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:25.489" endtime="20220527 12:13:26.032"/>
+</kw>
+<kw name="Então clico em Contas" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_CONTAS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:26.044" level="INFO">Clicking element '//a[contains(.,'Contas')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:26.042" endtime="20220527 12:13:26.568"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:26.039" endtime="20220527 12:13:26.570"/>
+</kw>
+<kw name="E digito Conta Corrente" library="contas">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${INPUT_CONTA}</arg>
+<arg>Conta Corrente</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:26.582" level="INFO">Typing text 'Conta Corrente' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:26.580" endtime="20220527 12:13:27.224"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:26.577" endtime="20220527 12:13:27.225"/>
+</kw>
+<kw name="Então clico no ícone azul de salvar" library="contas">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_SAVE_CONTA}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:27.232" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:27.230" endtime="20220527 12:13:27.595"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:27.227" endtime="20220527 12:13:27.597"/>
+</kw>
+<kw name="E confiro se consta Conta Corrente como salva" library="contas">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONTA_ALERT_SUCESSO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220527 12:13:27.607" endtime="20220527 12:13:28.845"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Conta Corrente</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220527 12:13:28.918" level="INFO">Current page contains text 'Conta Corrente'.</msg>
+<status status="PASS" starttime="20220527 12:13:28.847" endtime="20220527 12:13:28.919"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:27.604" endtime="20220527 12:13:28.920"/>
+</kw>
+<kw name="Quando clico no ícone de alterar" library="contas">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ALTERAR_CONTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:28.927" level="INFO">Clicking element '//i[contains(@class,'far fa-edit')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:28.925" endtime="20220527 12:13:29.356"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:28.923" endtime="20220527 12:13:29.357"/>
+</kw>
+<kw name="E digito Conta Salário" library="contas">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${CLEAR_ELEMENT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220527 12:13:29.389" endtime="20220527 12:13:29.575"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CLEAR_ELEMENT}</arg>
+<arg>Conta Salário</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:29.580" level="INFO">Typing text 'Conta Salário' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:29.577" endtime="20220527 12:13:30.347"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:29.386" endtime="20220527 12:13:30.349"/>
+</kw>
+<kw name="Então clico no ícone azul de salvar" library="contas">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_SAVE_CONTA}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220527 12:13:30.360" level="INFO">Clicking button '//button[contains(@class,'btn btn-primary btn-block')]'.</msg>
+<status status="PASS" starttime="20220527 12:13:30.358" endtime="20220527 12:13:30.707"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:30.355" endtime="20220527 12:13:30.708"/>
+</kw>
+<kw name="E confiro se consta Conta Salário e não Conta Corrente" library="contas">
+<kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
+<arg>Conta Corrente</arg>
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220527 12:13:30.747" endtime="20220527 12:13:31.665"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Conta Salário</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220527 12:13:31.666" endtime="20220527 12:13:31.738"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:30.743" endtime="20220527 12:13:31.739"/>
+</kw>
+<kw name="Fechar o navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220527 12:13:31.751" endtime="20220527 12:13:39.860"/>
+</kw>
+<status status="PASS" starttime="20220527 12:13:31.749" endtime="20220527 12:13:39.861"/>
 </kw>
 <tag>Alteração</tag>
 <tag>Contas</tag>
-<status status="PASS" starttime="20220523 11:32:29.109" endtime="20220523 11:32:46.726"/>
+<status status="PASS" starttime="20220527 12:13:10.766" endtime="20220527 12:13:39.863"/>
 </test>
-<status status="PASS" starttime="20220523 11:32:27.883" endtime="20220523 11:32:46.738"/>
+<status status="PASS" starttime="20220527 12:11:48.237" endtime="20220527 12:13:39.899"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Alteração</stat>
-<stat pass="1" fail="0" skip="0">Contas</stat>
+<stat pass="1" fail="0" skip="0">contaCorrente</stat>
+<stat pass="1" fail="0" skip="0">ContaPoupança</stat>
+<stat pass="4" fail="0" skip="0">Contas</stat>
+<stat pass="1" fail="0" skip="0">ExclusãoContas</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="testSite">testSite</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="testSite">testSite</stat>
 </suite>
 </statistics>
 <errors>
