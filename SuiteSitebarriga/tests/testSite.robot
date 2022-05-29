@@ -76,13 +76,36 @@ Caso de testes 07: alterando o nome de uma conta
     E digito Conta Salário
     Então clico no ícone azul de salvar 
     E confiro se consta Conta Salário e não Conta Corrente  
-# Caso de testes 08: cadastrando uma movimentação na conta corrente
-#     Dado que acesso a página home do site
-#     E digito um email e senha válidos
-#     E clico no botão entrar
-#     Quando clico em settings
-#     Então clico em Contas
-#     E digito Conta Corrente
-#     Então clico no ícone azul de salvar
-#     E confiro se consta Conta Corrente como salva
-#     Quando clico no ícone Cadastrar movimentação
+Caso de testes 08: cadastrando uma movimentação na conta corrente
+    Dado que acesso a página home do site
+    E digito um email e senha válidos
+    E clico no botão entrar
+    Quando clico em settings
+    Então clico em Contas
+    E digito Conta Corrente
+    Então clico no ícone azul de salvar
+    E confiro se consta Conta Corrente como salva
+    Quando clico no ícone Cadastrar movimentação        
+    E digito algo no campo Descrição
+    E adiciono um "valor" no campo valor
+    Então digito o nome do interessado
+    Quando verifico se aparece a opção Conta Corrente
+    Então clico em Salvar
+    E aparece a mensagem Movimentação inserida com sucesso
+Caso de testes 09: cadastrando uma movimentação na conta poupança
+    Dado que acesso a página home do site
+    E digito um email e senha válidos
+    E clico no botão entrar
+    Quando clico em settings
+    Então clico em Contas
+    E digito Conta Poupança
+    Então clico no ícone azul de salvar
+    E confiro se consta Conta Corrente e Conta Poupança como salva
+    Quando clico no ícone Cadastrar movimentação        
+    E digito algo no campo Descrição
+    E adiciono um "valor" no campo valor
+    Então digito o nome do interessado
+    Quando verifico se aparece a opção Conta Poupança
+    Então clico em Salvar
+    E aparece a mensagem Movimentação inserida com sucesso
+    
