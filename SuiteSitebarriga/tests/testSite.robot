@@ -76,5 +76,13 @@ Caso de testes 07: alterando o nome de uma conta
     E digito Conta Salário
     Então clico no ícone azul de salvar 
     E confiro se consta Conta Salário e não Conta Corrente  
-
-    
+Caso de testes 08: cadastrando uma movimentação na conta corrente
+    Dado que acesso a página home do site
+    E digito um email e senha válidos
+    E clico no botão entrar
+    Quando clico em settings
+    Então clico em Contas
+    E digito Conta Corrente
+    Então clico no ícone azul de salvar
+    E confiro se consta Conta Corrente como salva
+    Quando clico no ícone Cadastrar movimentação
