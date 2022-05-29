@@ -7,7 +7,7 @@ Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 Caso de teste 01: registrando um novo usuário
-    [Tags]    Cad-Login
+    [Tags]    Registro
     Dado que acesso a página home do site
     E clico em Registrar
     E digito um nome
@@ -15,7 +15,7 @@ Caso de teste 01: registrando um novo usuário
     E digito uma senha
     Então clico em Regristrar
 Caso de testes 02: logando com sucesso
-    [Tags]    Cad-Login
+    [Tags]    Login
     Dado que acesso a página home do site
     E digito um email e senha válidos
     E clico no botão entrar
