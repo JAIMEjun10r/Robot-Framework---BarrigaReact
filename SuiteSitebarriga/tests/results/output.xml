@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220529 09:42:36.117" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220529 10:15:08.548" rpa="false" schemaversion="2">
 <suite id="s1" name="testSite" source="C:\Users\Jaime\Documents\RobotFramework\barrigaReact\RB\SuiteSitebarriga\tests\testSite.robot">
 <test id="s1-t1" name="Caso de testes 02: logando com sucesso">
 <kw name="Abrir o navegador" library="Resource" type="SETUP">
@@ -7,77 +7,77 @@
 <arg>about:blank</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220529 09:42:40.184" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220529 09:42:40.184" endtime="20220529 09:42:45.158"/>
+<msg timestamp="20220529 10:15:09.594" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220529 10:15:09.594" endtime="20220529 10:15:13.075"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220529 09:42:45.158" endtime="20220529 09:42:45.332"/>
+<status status="PASS" starttime="20220529 10:15:13.075" endtime="20220529 10:15:13.276"/>
 </kw>
-<status status="PASS" starttime="20220529 09:42:40.184" endtime="20220529 09:42:45.333"/>
+<status status="PASS" starttime="20220529 10:15:09.594" endtime="20220529 10:15:13.276"/>
 </kw>
 <kw name="Dado que acesso a página home do site" library="home">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220529 09:42:45.340" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
-<status status="PASS" starttime="20220529 09:42:45.339" endtime="20220529 09:42:47.567"/>
+<msg timestamp="20220529 10:15:13.287" level="INFO">Opening url 'https://barrigareact.wcaquino.me/'</msg>
+<status status="PASS" starttime="20220529 10:15:13.284" endtime="20220529 10:15:15.732"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOME_LOGIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220529 09:42:47.567" endtime="20220529 09:42:47.817"/>
+<status status="PASS" starttime="20220529 10:15:15.732" endtime="20220529 10:15:15.846"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220529 09:42:47.833" level="INFO">Page title is 'React App'.</msg>
-<status status="PASS" starttime="20220529 09:42:47.817" endtime="20220529 09:42:47.833"/>
+<msg timestamp="20220529 10:15:15.864" level="INFO">Page title is 'React App'.</msg>
+<status status="PASS" starttime="20220529 10:15:15.846" endtime="20220529 10:15:15.864"/>
 </kw>
-<status status="PASS" starttime="20220529 09:42:45.337" endtime="20220529 09:42:47.833"/>
+<status status="PASS" starttime="20220529 10:15:13.276" endtime="20220529 10:15:15.864"/>
 </kw>
 <kw name="E digito um email e senha válidos" library="home">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_EMAIL}</arg>
 <arg>cab1a@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220529 09:42:47.841" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
-<status status="PASS" starttime="20220529 09:42:47.833" endtime="20220529 09:42:48.202"/>
+<msg timestamp="20220529 10:15:15.871" level="INFO">Typing text 'cab1a@gmail.com' into text field '//input[contains(@data-test,'email')]'.</msg>
+<status status="PASS" starttime="20220529 10:15:15.864" endtime="20220529 10:15:16.289"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_PWD}</arg>
 <arg>1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220529 09:42:48.202" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220529 09:42:48.202" endtime="20220529 09:42:48.469"/>
+<msg timestamp="20220529 10:15:16.289" level="INFO">Typing text '1234' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220529 10:15:16.289" endtime="20220529 10:15:16.574"/>
 </kw>
-<status status="PASS" starttime="20220529 09:42:47.833" endtime="20220529 09:42:48.477"/>
+<status status="PASS" starttime="20220529 10:15:15.864" endtime="20220529 10:15:16.574"/>
 </kw>
 <kw name="E clico no botão entrar" library="home">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${HOME_LOGIN_BTNENTRAR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220529 09:42:48.477" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
-<status status="PASS" starttime="20220529 09:42:48.477" endtime="20220529 09:42:48.712"/>
+<msg timestamp="20220529 10:15:16.574" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220529 10:15:16.574" endtime="20220529 10:15:16.794"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ALERT_WELCOME}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220529 09:42:48.712" endtime="20220529 09:42:49.973"/>
+<status status="PASS" starttime="20220529 10:15:16.794" endtime="20220529 10:15:17.996"/>
 </kw>
-<status status="PASS" starttime="20220529 09:42:48.477" endtime="20220529 09:42:49.989"/>
+<status status="PASS" starttime="20220529 10:15:16.574" endtime="20220529 10:15:18.012"/>
 </kw>
 <kw name="Fechar o navegador" library="Resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220529 09:42:49.994" endtime="20220529 09:42:52.837"/>
+<status status="PASS" starttime="20220529 10:15:18.012" endtime="20220529 10:15:21.023"/>
 </kw>
-<status status="PASS" starttime="20220529 09:42:49.989" endtime="20220529 09:42:52.837"/>
+<status status="PASS" starttime="20220529 10:15:18.012" endtime="20220529 10:15:21.023"/>
 </kw>
 <tag>Login</tag>
-<status status="PASS" starttime="20220529 09:42:40.176" endtime="20220529 09:42:52.837"/>
+<status status="PASS" starttime="20220529 10:15:09.594" endtime="20220529 10:15:21.023"/>
 </test>
-<status status="PASS" starttime="20220529 09:42:36.132" endtime="20220529 09:42:52.843"/>
+<status status="PASS" starttime="20220529 10:15:08.564" endtime="20220529 10:15:21.050"/>
 </suite>
 <statistics>
 <total>
