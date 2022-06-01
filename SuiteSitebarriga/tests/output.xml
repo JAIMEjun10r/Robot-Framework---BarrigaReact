@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220601 11:35:37.745" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Jaime\.vscode\extensions\robocorp.robotframework-lsp-0.48.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Dado que acesso a página home do site">
+<msg timestamp="20220601 11:35:47.458" level="FAIL">No keyword with name 'Dado que acesso a página home do site' found.</msg>
+<status status="FAIL" starttime="20220601 11:35:47.458" endtime="20220601 11:35:47.459"/>
+</kw>
+<kw name="E digito um email e senha válidos">
+<status status="NOT RUN" starttime="20220601 11:35:47.470" endtime="20220601 11:35:47.470"/>
+</kw>
+<kw name="E clico no botão entrar">
+<status status="NOT RUN" starttime="20220601 11:35:47.479" endtime="20220601 11:35:47.479"/>
+</kw>
+<kw name="Quando clico em settings">
+<status status="NOT RUN" starttime="20220601 11:35:47.488" endtime="20220601 11:35:47.488"/>
+</kw>
+<kw name="Então clico em Contas">
+<status status="NOT RUN" starttime="20220601 11:35:47.496" endtime="20220601 11:35:47.496"/>
+</kw>
+<kw name="E digito Conta Poupança">
+<status status="NOT RUN" starttime="20220601 11:35:47.506" endtime="20220601 11:35:47.507"/>
+</kw>
+<kw name="Então clico no ícone azul de salvar">
+<status status="NOT RUN" starttime="20220601 11:35:47.514" endtime="20220601 11:35:47.514"/>
+</kw>
+<kw name="E confiro se consta Conta Corrente e Conta Poupança como salva">
+<status status="NOT RUN" starttime="20220601 11:35:47.521" endtime="20220601 11:35:47.521"/>
+</kw>
+<kw name="Quando clico no ícone Cadastrar movimentação">
+<status status="NOT RUN" starttime="20220601 11:35:47.528" endtime="20220601 11:35:47.528"/>
+</kw>
+<kw name="E digito algo no campo Descrição">
+<status status="NOT RUN" starttime="20220601 11:35:47.541" endtime="20220601 11:35:47.541"/>
+</kw>
+<kw name="E adiciono um &quot;valor&quot; no campo valor">
+<status status="NOT RUN" starttime="20220601 11:35:47.550" endtime="20220601 11:35:47.550"/>
+</kw>
+<kw name="Então digito o nome do interessado">
+<status status="NOT RUN" starttime="20220601 11:35:47.557" endtime="20220601 11:35:47.558"/>
+</kw>
+<kw name="Quando verifico se aparece a opção Conta Poupança">
+<status status="NOT RUN" starttime="20220601 11:35:47.569" endtime="20220601 11:35:47.569"/>
+</kw>
+<kw name="Então clico em Salvar">
+<status status="NOT RUN" starttime="20220601 11:35:47.581" endtime="20220601 11:35:47.582"/>
+</kw>
+<kw name="E aparece a mensagem Movimentação inserida com sucesso">
+<status status="NOT RUN" starttime="20220601 11:35:47.589" endtime="20220601 11:35:47.590"/>
+</kw>
+<status status="PASS" starttime="20220601 11:35:38.130" endtime="20220601 11:38:39.852"/>
+</kw>
+<status status="PASS" starttime="20220601 11:35:38.128" endtime="20220601 11:38:39.852"/>
+</test>
+<status status="PASS" starttime="20220601 11:35:37.755" endtime="20220601 11:38:39.859"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

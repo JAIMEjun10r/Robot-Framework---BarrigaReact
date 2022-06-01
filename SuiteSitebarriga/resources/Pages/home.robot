@@ -14,7 +14,7 @@ ${HOME_ALERT_SUCESSO}      //div[@class='toast-message'][contains(.,'Usuário ad
 ${HOME_LOGIN_EMAIL}        //input[contains(@data-test,'email')]
 ${HOME_LOGIN_PWD}          //input[@type='password']
 ${HOME_LOGIN_BTNENTRAR}    //button[@type='submit'][contains(.,'Entrar')]
-${ALERT_WELCOME}           //div[@class='toast-message'][contains(.,'Bem vindo, Bernardos!')]
+${ALERT_WELCOME}           //div[@class='toast-message'][contains(.,'Bem vindo, Valtinho!')]
 ${HOME_BTN_SETTINGS}        //a[contains(@class,'nav-link dropdown-toggle')]
 ${HOME_CONTAS}             //a[contains(.,'Contas')]
 ${HOME_RESETAR}            //a[contains(.,'Contas')]
@@ -28,10 +28,10 @@ Dado que acesso a página home do site
  E clico em Registrar
      Click Element    ${HOME_REGISTRAR}
  E digito um nome
-     Input Text    ${HOME_REGISTRAR_NOME}    Bernardos
+     Input Text    ${HOME_REGISTRAR_NOME}    Valtinho
 E digito um email
 
-    Input Text    ${HOME_REGISTRAR_EMAIL}    cab1a@gmail.com
+    Input Text    ${HOME_REGISTRAR_EMAIL}    xuxu2@bol.com
  E digito uma senha
      Input Text    ${HOME_REGISTRAR_SENHA}    1234
 Então clico em Regristrar
@@ -39,7 +39,7 @@ Então clico em Regristrar
     Wait Until Element Is Visible   ${HOME_ALERT_SUCESSO}  
 ############ case 02 ###################
 E digito um email e senha válidos
-    Input Text    ${HOME_LOGIN_EMAIL}    cab1a@gmail.com 
+    Input Text    ${HOME_LOGIN_EMAIL}    xuxu2@bol.com 
     Input Text    ${HOME_LOGIN_PWD}    1234             
 E clico no botão entrar
     Click Button    ${HOME_LOGIN_BTNENTRAR}

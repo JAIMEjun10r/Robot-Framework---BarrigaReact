@@ -2,6 +2,7 @@
 Resource    ../resources/Resource.robot
 Resource    ../resources/Pages/home.robot
 Resource    ../resources/Pages/contas.robot
+Resource    ../resources/Pages/cadastrarMovimentacao.robot
 Test Setup        Abrir o navegador
 Test Teardown    Fechar o navegador    
 
@@ -63,7 +64,7 @@ Caso de testes 06: excluindo conta corrente e poupança
     Quando clico em settings
     Então clico em sair
 Caso de testes 07: alterando o nome de uma conta
-    [Tags]    Contas     Alteração
+    [Tags]    Alteração
     Dado que acesso a página home do site
     E digito um email e senha válidos
     E clico no botão entrar
@@ -77,6 +78,7 @@ Caso de testes 07: alterando o nome de uma conta
     Então clico no ícone azul de salvar 
     E confiro se consta Conta Salário e não Conta Corrente  
 Caso de testes 08: cadastrando uma movimentação na conta corrente
+    [Tags]    Movimentação
     Dado que acesso a página home do site
     E digito um email e senha válidos
     E clico no botão entrar
@@ -87,25 +89,25 @@ Caso de testes 08: cadastrando uma movimentação na conta corrente
     E confiro se consta Conta Corrente como salva
     Quando clico no ícone Cadastrar movimentação        
     E digito algo no campo Descrição
-    E adiciono um "valor" no campo valor
+    E adiciono um valor no campo valor
     Então digito o nome do interessado
-    Quando verifico se aparece a opção Conta Corrente
+    E seleciono a opção Conta Corrente
     Então clico em Salvar
     E aparece a mensagem Movimentação inserida com sucesso
-Caso de testes 09: cadastrando uma movimentação na conta poupança
-    Dado que acesso a página home do site
-    E digito um email e senha válidos
-    E clico no botão entrar
-    Quando clico em settings
-    Então clico em Contas
-    E digito Conta Poupança
-    Então clico no ícone azul de salvar
-    E confiro se consta Conta Corrente e Conta Poupança como salva
-    Quando clico no ícone Cadastrar movimentação        
-    E digito algo no campo Descrição
-    E adiciono um "valor" no campo valor
-    Então digito o nome do interessado
-    Quando verifico se aparece a opção Conta Poupança
-    Então clico em Salvar
-    E aparece a mensagem Movimentação inserida com sucesso
+# Caso de testes 09: cadastrando uma movimentação na conta poupança
+#     Dado que acesso a página home do site
+#     E digito um email e senha válidos
+#     E clico no botão entrar
+#     Quando clico em settings
+#     Então clico em Contas
+#     E digito Conta Poupança
+#     Então clico no ícone azul de salvar
+#     E confiro se consta Conta Corrente e Conta Poupança como salva
+#     Quando clico no ícone Cadastrar movimentação        
+#     E digito algo no campo Descrição
+#     E adiciono um "valor" no campo valor
+#     Então digito o nome do interessado
+#     Quando verifico se aparece a opção Conta Poupança
+#     Então clico em Salvar
+#     E aparece a mensagem Movimentação inserida com sucesso
     
